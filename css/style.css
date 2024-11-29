@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+header {
+    width: 100%;
+}
+header p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #714144;
+    padding: 10px 0;
+    margin-bottom: 0rem;
+}
+.navbar {
+    background-color: #714144;
+}
+.navbar-brand img {
+    width: auto;
+    height: 50px;
+}
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 100!important;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Media queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+    header p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        font-size: 20px;
+    }
+}
+
+#main-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+#div-login1 {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+.form-login h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.form-login .form-control {
+    margin-bottom: 1rem;
+}
+#senha-cadastro {
+    width: 100%;
+}
+.bi-check2-square {
+    margin-left: 0.5rem;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+#main-login, #main-edit {
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.form-login, .form-edit {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+    box-sizing: border-box; /* Garantir que o padding e border sejam incluídos na largura */
+}
+.form-login, .form-edit h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.form-login, .form-edit .btn {
+    font-weight: 500;
+}
+.form-login, .form-edit .form-label {
+    font-weight: 600;
+}

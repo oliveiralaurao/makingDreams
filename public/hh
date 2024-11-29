@@ -1,0 +1,49 @@
+<main class="login-page">
+            <div class="form">
+                <form id="registerForm" class="register-form" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                        
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div id="emailError" style="display:none; color:red;"></div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                        
+                        <label for="senha_repetida">Repetir senha:</label>
+                        <input type="password" id="senha_repetida" name="senha_repetida" required>
+
+                       
+
+                        <label for="nivel_usuario">Nível de Usuário:</label>
+                        <select id="nivel_usuario" name="nivel_usuario" class="form-select" required >
+                            <option selected>Selecione:</option>
+                            <option value="noiva">Noiva/Noivo</option>
+                            <option value="convidado">Convidado</option>
+                        </select>
+                        
+                        <div id="mensagem-erro" style="display:none; color:red;"></div> 
+                        <div id="apaos"></div>
+                        <button type="submit" class="button-login">Cadastrar</button>
+
+
+                    <p class="message">Já tem conta? <a href="#" id="toggleLogin">Entrar</a></p>
+                </form>
+                <form id="loginForm" class="login-formm" action="../backBack/verificaLogin.php" method="post">
+                    <label for="email-login" id="label-loginn">Email:</label>
+                    <input type="email" id="email-login" class="input-login" name="email-login" required>
+                    
+                    <label for="input-login" id="label-login">Senha:</label>
+                    <input type="password" id="input-login" class="input-login" name="input-login" required>
+                    <div id="apao"></div>
+                    
+                    <button type="submit" id="button-login">Entrar</button>
+                    <p class="message">Não tem conta? <a href="#" id="toggleRegister">Criar Conta</a></p>
+                </form>
+            </div>
+        </main>
